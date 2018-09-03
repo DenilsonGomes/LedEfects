@@ -33,9 +33,12 @@ void setup() {
 void loop(){
     //Acende um led de cada vez na ordem crescente por um determinado tempo
     //acende1SeqCrescente(vetor de leds,Numero de leds,tempo em milisegundos);
-    acende1SeqCrescente(leds,N,200);
+    //acende1SeqCrescente(leds,N,200);
 
     //Acende um led de cada vez na ordem decrescente por um determinado tempo
     //acende1SeqCrescente(vetor de leds,Numero de leds,tempo em milisegundos);
-    acende1SeqDecrescente(leds, N, 500);
+    //acende1SeqDecrescente(leds, N, 500);
+
+    //acende2SeqCrescente(leds, N, 200);
+    acende2SeqDecrescente(leds, N, 200);
 }
