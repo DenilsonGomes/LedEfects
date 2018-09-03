@@ -13,7 +13,7 @@ conectados ao arduino, obter efeitos interessantes visualmente!
 #include <C:\Users\Tery\Documents\PlatformIO\Projects\LedEfects\lib\funcoes.h>
 
 //--Constantes e Variaveis
-#define N 9 //Numero de leds
+#define N 8 //Numero de leds
 int leds[N]; //Vetor dos leds
 
 //--Setup
