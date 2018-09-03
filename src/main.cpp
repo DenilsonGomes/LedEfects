@@ -4,7 +4,8 @@
 *
 * LedEfects:
 * Codigo para, juntamento com um conjunto de leds devidamente
-conectados ao arduino, obter efeitos interessantes visualmente
+conectados ao arduino, obter efeitos interessantes visualmente!
+* Cada led deve ser conectado a uma porta do arduino.
 */
 
 //--Bibliotecas
