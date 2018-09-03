@@ -39,6 +39,6 @@ void loop(){
     //acende1SeqCrescente(vetor de leds,Numero de leds,tempo em milisegundos);
     //acende1SeqDecrescente(leds, N, 500);
 
-    //acende2SeqCrescente(leds, N, 200);
+    acende2SeqCrescente(leds, N, 200);
     acende2SeqDecrescente(leds, N, 200);
 }
