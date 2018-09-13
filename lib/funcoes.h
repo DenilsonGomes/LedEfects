@@ -53,3 +53,15 @@ void acende2SeqDecrescente(int x[], int n, int tempo){
         digitalWrite(x[i-1], LOW); //Apaga o led
     }
 }
+
+void acendeFimMeio(int x[], int n, int tempo){
+    for(int i=0;i<n;i++){ //Das pontas para o meio
+        Serial.println(i+1); //printa a porta digital do led
+        Serial.println(n-i-1); //printa a porta digital do led
+        digitalWrite(x[i], HIGH); //Acende o led
+        digitalWrite(x[n-i-1], HIGH); //Acende o led
+        delay(tempo); //Espera um tempo
+        digitalWrite(x[i], LOW); //Apaga o led
+        digitalWrite(x[n-i-1], LOW); //Acende o led
+    }
+}
