@@ -54,7 +54,7 @@ void acende2SeqDecrescente(int x[], int n, int tempo){
     }
 }
 
-void acendeFimMeio(int x[], int n, int tempo){
+void acende1FimMeio(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Das pontas para o meio
         Serial.println(i+1); //printa a porta digital do led
         Serial.println(n-i-1); //printa a porta digital do led
@@ -62,6 +62,24 @@ void acendeFimMeio(int x[], int n, int tempo){
         digitalWrite(x[n-i-1], HIGH); //Acende o led
         delay(tempo); //Espera um tempo
         digitalWrite(x[i], LOW); //Apaga o led
+        digitalWrite(x[n-i-1], LOW); //Acende o led
+    }
+}
+
+void acende2FimMeio(int x[], int n, int tempo){
+    for(int i=0;i<n;i++){ //Das pontas para o meio
+        Serial.println(i+1); //printa a porta digital do led
+        Serial.println(i+2); //printa a porta digital do led
+        Serial.println(n-i-2); //printa a porta digital do led
+        Serial.println(n-i-1); //printa a porta digital do led
+        digitalWrite(x[i], HIGH); //Acende o led
+        digitalWrite(x[i+1], HIGH); //Acende o led
+        digitalWrite(x[n-i-2], HIGH); //Acende o led
+        digitalWrite(x[n-i-1], HIGH); //Acende o led
+        delay(tempo); //Espera um tempo
+        digitalWrite(x[i], LOW); //Apaga o led
+        digitalWrite(x[i+1], LOW); //Acende o led
+        digitalWrite(x[n-i-2], LOW); //Acende o led
         digitalWrite(x[n-i-1], LOW); //Acende o led
     }
 }

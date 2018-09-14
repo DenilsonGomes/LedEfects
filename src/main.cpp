@@ -47,6 +47,11 @@ void loop(){
     //acende2SeqDecrescente(vetor de leds,Numero de leds,tempo em milisegundos);
     //acende2SeqDecrescente(leds, N, 200);
 
-    //delay(2000);
-    acendeFimMeio(leds, N, 200);
+    //Acende 1 led das pontas pro meio
+    //acende1FimMeio(vetor de leds,Numero de leds,tempo em milisegundos);
+    //acende1FimMeio(leds, N, 200);
+
+    //Acende 2 led das pontas pro meio
+    //acende2FimMeio(vetor de leds,Numero de leds,tempo em milisegundos);
+    acende2FimMeio(leds, N, 200);
 }
