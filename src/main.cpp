@@ -4,8 +4,10 @@
 *
 * LedEfects:
 * Codigo para, juntamento com um conjunto de leds devidamente
-conectados ao arduino, obter efeitos interessantes visualmente!
+* conectados ao arduino, obter efeitos interessantes visualmente!
 * Cada led deve ser conectado a uma porta do arduino.
+* No caso de usar as portaqs analogicas, deve-se fazer a atribuição
+* apropriada da varivel no vetor de leds.
 */
 
 //--Bibliotecas
@@ -19,11 +21,9 @@ int leds[N]; //Vetor dos leds
 //--Setup
 void setup() {
     Serial.begin(9600); //Inicia o monitor serial
-
     for(int i = 0;i<N;i++){ //Para os leds
         leds[i] = i+2; //Valor da porta do arduino para o i-ésimo led
     }
-
     for(int i=0;i<N;i++){ //Para os leds
         pinMode(leds[i],OUTPUT); //Define os leds como saida
     }
