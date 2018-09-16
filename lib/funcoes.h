@@ -13,14 +13,14 @@ obter efeitos interessantes visualmente
 //acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos)
 void acendeImpar(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
-        if(i % 2 == 0){
-            digitalWrite(x[i], HIGH);
+        if(i % 2 == 0){ //Se o resto da divisao do indice por 2 for zero
+            digitalWrite(x[i], HIGH); //Acenda o led
         }
     }
-    delay(tempo);
+    delay(tempo); //Espere tempo milisegundos
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
-        if(i % 2 == 0){
-            digitalWrite(x[i], LOW);
+        if(i % 2 == 0){ //Se o resto da divisao do indice por 2 for zero
+            digitalWrite(x[i], LOW); //Apaga o led
         }
     }
 }
@@ -28,14 +28,14 @@ void acendeImpar(int x[], int n, int tempo){
 //acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos)
 void acendePar(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
-        if(i % 2 == 1){
-            digitalWrite(x[i], HIGH);
+        if(i % 2 == 1){ //Se o resto da divisao do indice por 2 for 1
+            digitalWrite(x[i], HIGH); //Acende o led
         }
     }
-    delay(tempo);
+    delay(tempo); //Espera tempo milisegundos
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
-        if(i % 2 == 1){
-            digitalWrite(x[i], LOW);
+        if(i % 2 == 1){ //Se o resto da divisao do indice por 2 for 1
+            digitalWrite(x[i], LOW); //Apaga o led
         }
     }
 }
