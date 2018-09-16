@@ -53,5 +53,13 @@ void loop(){
 
     //Acende 2 led das pontas pro meio
     //acende2FimMeio(vetor de leds,Numero de leds,tempo em milisegundos);
-    acende2FimMeio(leds, N, 200);
+    //acende2FimMeio(leds, N, 200);
+
+    //Acende os leds impares
+    //acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos);
+    acendeImpar(leds, N, 200);
+
+    //Acende os leds pares
+    //acendePar(vetor de leds,Numero de leds,tempo em milisegundos);
+    acendePar(leds,N,200);
 }

@@ -10,6 +10,36 @@ obter efeitos interessantes visualmente
 //--Bibliotecas
 #include <Arduino.h>
 
+//acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos)
+void acendeImpar(int x[], int n, int tempo){
+    for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
+        if(i % 2 == 0){
+            digitalWrite(x[i], HIGH);
+        }
+    }
+    delay(tempo);
+    for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
+        if(i % 2 == 0){
+            digitalWrite(x[i], LOW);
+        }
+    }
+}
+
+//acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos)
+void acendePar(int x[], int n, int tempo){
+    for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
+        if(i % 2 == 1){
+            digitalWrite(x[i], HIGH);
+        }
+    }
+    delay(tempo);
+    for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
+        if(i % 2 == 1){
+            digitalWrite(x[i], LOW);
+        }
+    }
+}
+
 //acende1SeqCrescente(vetor de leds,Numero de leds,tempo em milisegundos)
 void acende1SeqCrescente(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
