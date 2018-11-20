@@ -9,6 +9,7 @@ obter efeitos interessantes visualmente
 
 //--Bibliotecas
 #include <Arduino.h>
+//#include <funcoes.h>
 
 //acendeImpar(vetor de leds,Numero de leds,tempo em milisegundos)
 void acendeImpar(int x[], int n, int tempo){
@@ -43,7 +44,7 @@ void acendePar(int x[], int n, int tempo){
 //acende1SeqCrescente(vetor de leds,Numero de leds,tempo em milisegundos)
 void acende1SeqCrescente(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Do primeiro pro ultimo led
-        Serial.println(i+2); //Printa a porta digital do led
+        //Serial.println(i+2); //Printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         delay(tempo); //Espera um tepo
         digitalWrite(x[i], LOW); //apaga o led
@@ -53,7 +54,7 @@ void acende1SeqCrescente(int x[], int n, int tempo){
 //acende1SeqDecrescente(vetor de leds,Numero de leds,tempo em milisegundos)
 void acende1SeqDecrescente(int x[], int n, int tempo){
     for(int i=n-1;i>=0;i--){ //Do ultimo para o primeiro led
-        Serial.println(i+2); //printa a porta digital do led
+        //Serial.println(i+2); //printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         delay(tempo); //Espera um tempo
         digitalWrite(x[i], LOW); //Apaga o led
@@ -62,8 +63,8 @@ void acende1SeqDecrescente(int x[], int n, int tempo){
 
 void acende2SeqCrescente(int x[], const int n, int tempo){
     for(int i=0;i<n-1;i++){ //Do ultimo para o primeiro led
-        Serial.println(i+2); //printa a porta digital do led
-        Serial.println(i+3); //printa a porta digital do led
+        //Serial.println(i+2); //printa a porta digital do led
+        //Serial.println(i+3); //printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         digitalWrite(x[i+1], HIGH); //Acende o led
         delay(tempo); //Espera um tempo
@@ -74,8 +75,8 @@ void acende2SeqCrescente(int x[], const int n, int tempo){
 
 void acende2SeqDecrescente(int x[], int n, int tempo){
     for(int i=n-1;i>0;i--){ //Do ultimo para o primeiro led
-        Serial.println(i+2); //printa a porta digital do led
-        Serial.println(i+1); //printa a porta digital do led
+        //Serial.println(i+2); //printa a porta digital do led
+        //Serial.println(i+1); //printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         digitalWrite(x[i-1], HIGH); //Acende o led
         delay(tempo); //Espera um tempo
@@ -86,8 +87,8 @@ void acende2SeqDecrescente(int x[], int n, int tempo){
 
 void acende1FimMeio(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Das pontas para o meio
-        Serial.println(i+1); //printa a porta digital do led
-        Serial.println(n-i-1); //printa a porta digital do led
+        //Serial.println(i+1); //printa a porta digital do led
+        //Serial.println(n-i-1); //printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         digitalWrite(x[n-i-1], HIGH); //Acende o led
         delay(tempo); //Espera um tempo
@@ -98,10 +99,10 @@ void acende1FimMeio(int x[], int n, int tempo){
 
 void acende2FimMeio(int x[], int n, int tempo){
     for(int i=0;i<n;i++){ //Das pontas para o meio
-        Serial.println(i+1); //printa a porta digital do led
-        Serial.println(i+2); //printa a porta digital do led
-        Serial.println(n-i-2); //printa a porta digital do led
-        Serial.println(n-i-1); //printa a porta digital do led
+        //Serial.println(i+1); //printa a porta digital do led
+        //Serial.println(i+2); //printa a porta digital do led
+        //Serial.println(n-i-2); //printa a porta digital do led
+        //Serial.println(n-i-1); //printa a porta digital do led
         digitalWrite(x[i], HIGH); //Acende o led
         digitalWrite(x[i+1], HIGH); //Acende o led
         digitalWrite(x[n-i-2], HIGH); //Acende o led

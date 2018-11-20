@@ -12,7 +12,7 @@
 
 //--Bibliotecas
 #include <Arduino.h>
-#include <C:\Users\Tery\Documents\PlatformIO\Projects\LedEfects\lib\funcoes.h>
+#include <funcoes.c>
 
 //--Constantes e Variaveis
 #define N 8 //Numero de leds
