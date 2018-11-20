@@ -12,7 +12,7 @@
 
 //--Bibliotecas
 #include <Arduino.h>
-#include <funcoes.c>
+#include <funcoes.h>
 
 //--Constantes e Variaveis
 #define N 8 //Numero de leds
